@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.boat{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+			top:40px;
+		}
+		.boat1{
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+			position: relative;
+			top:30px;
+		}
+		.boat2{
+			width: 30px;
+			height: 30px;
+			background-color: blue;
+			position: absolute;
+			left:50px;
+			margin-left: -10px;
+		}
+		</style>
+</head>
+<body>
+	<div class="boat">boat</div>
+	<div class="boat1">boat1
+		<div class="boat2">boat2</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>混合选中优先级练习</title>
+<style>
+	div2 div1 .grandfather{
+		color: red;
+	}
+
+	p .son #son{
+		color:yellow;
+	}
+	#son #father{
+		color:purple;
+	}
+</style>
+</head>
+<body>
+	<div1 class="grandfather" id="grandfather">
+		<div2 class="father" id="father">
+			<p class="son" id="son">
+			这是一个演示段落	
+			</p>
+		</div2>
+	</div1>
+</body>
+</html>

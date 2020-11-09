@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动流布局-清除浮动-BFC方法</title>
+	<style>
+		*{
+			margin: 0;
+			display: 0;
+		}
+		.father{
+			background-color: pink;
+			margin-bottom: 50px;
+			overflow: hidden;
+		}
+		.father .box{
+			width: 100px;
+			background-color: red;
+			float: left;
+			
+		}
+		.son{
+			background-color: yellow;
+		}
+		.son .box{
+			width: 100px;
+			background-color: blue;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+	</div>
+	<div class="son">
+		<div class="box">4</div>
+		<div class="box">5</div>
+		<div class="box">6</div>
+	</div>
+</body>
+</html>

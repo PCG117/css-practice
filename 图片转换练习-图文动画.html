@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片转换练习-图文动画</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+			border:20px solid #000;
+			position: relative;
+			overflow: hidden;
+			margin:30px auto;
+
+			perspective: 100px;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+/*			position: absolute;
+			top: 0;
+			left: 0;*/
+			transition:0.4s;
+
+		}
+		.bg{			
+			left: 0;
+			top: 0;
+/*			width: 100%;
+			height: 100%;*/
+			position: absolute;
+/*			transform: translateY(300px);*/
+			transition:0.4s;
+
+			transform: rotateX(80deg);
+			transform-origin: center bottom;
+			opacity: 0;
+			z-index: -1;
+		}
+		.box:hover .bg{
+			transform: rotateX(0deg);
+			opacity: 1;
+		}
+		.box:hover img {
+			transform: translateY(-100%);
+		}
+
+		
+	</style>
+</head>
+<body>
+<div class="box">
+		<div class="bg">
+			<h1>邓紫棋</h1>
+			<p>
+			邓紫棋（Gloria Tang Tsz-Kei），又名G.E.M.，本名邓诗颖，1991年8月16日生于中国上海，4岁移居香港，中国香港女歌手、词曲创作人。
+			</p>
+		</div>
+<!-- 		<div class="image"> -->
+				<img src="timg.jpg" alt="" >
+<!-- 		</div>		 -->	
+</div>
+</body>
+</html>

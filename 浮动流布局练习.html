@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动流布局练习</title>
+	<style>
+		*{
+			margin: 0;
+			display: 0;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+			border:1px solid #000;
+			margin: 50px auto;
+		}
+		.box1{
+			width: 100px;
+			height: 100px;
+			border:1px solid #000;
+			background-color: yellow;
+			float: left;
+		}
+		.box2{
+			width: 100px;
+			height: 100px;
+			border:1px solid #000;
+			background-color: orange;
+			float: right;
+		}
+		.father{
+			width: 100px;
+			height: 100px;
+			border:1px solid black;
+		}
+		.box3{
+			background-color: red;
+			display: block;
+		}
+		.box4{
+			background-color: green;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+	<div class="box1">div1</div>
+	<div class="box2">div1</div>
+	</div>
+	<div class="father">
+	<span class="box3">span1</span>
+	<span class="box4">span1</span>
+	</div>
+</body>
+</html>

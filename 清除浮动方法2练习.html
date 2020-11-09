@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动流布局-清除浮动</title>
+	<style>
+		*{
+			margin: 0;
+			display: 0;
+		}
+		.father{
+			background-color: pink;
+		}
+		.father1{
+			width: 100px;
+			background-color: red;
+			float: left;
+		}
+		.father2{
+			width: 100px;
+			background-color: red;
+			float: left;
+		}
+		.father3{
+			width: 100px;
+			background-color: red;
+			float: left;
+		}
+		.son{
+			background-color: yellow;
+			clear: both;
+		}
+		.son1{
+			width: 100px;
+			background-color: blue;
+			float: right;
+		}
+		.son2{
+			width: 100px;
+			background-color: blue;
+			float: right;
+		}
+		.son3{
+			width: 100px;
+			background-color: blue;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="father1">1</div>
+		<div class="father2">2</div>
+		<div class="father3">3</div>
+	</div>
+	<div class="son">
+		<div class="son1">4</div>
+		<div class="son2">5</div>
+		<div class="son3">6</div>
+	</div>
+</body>
+</html>

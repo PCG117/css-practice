@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>过渡-图片蒙版练习</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+			border:1px solid #000;
+			position: relative;
+			overflow: hidden;
+			margin:30px auto;
+		}
+		.name{
+			text-align:center;
+			line-height: 100px;
+		}
+		.info{
+			height: 200px;
+			overflow: hidden;
+		}
+		img{
+			width: 100%;
+			height: 200px;
+			position: absolute;
+			top: 100px;
+			left: 0;
+		}
+		.box:hover img{
+			top:300px;
+		}
+		img{
+			transition:all 1s;
+		}
+		
+	</style>
+</head>
+<body>
+<div class="box">
+		<div class="name">
+			邓紫棋
+		</div>
+		<div class="info">
+			邓紫棋（Gloria Tang Tsz-Kei），又名G.E.M.（“Get Everybody Moving”的简称），本名邓诗颖，1991年8月16日生于中国上海，4岁移居香港，中国香港女歌手、词曲创作人。
+		</div>
+		<ul class="image">
+			<li>
+				<img src="timg.jpg" alt="邓紫棋">
+			</li>
+		</ul>
+			
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单一直接选中优先级练习</title>
+<style>
+	div1{
+		color: red;
+	}
+	div2{
+		color: blue;
+	}
+	p{
+		color: green;
+	}
+	.son{
+		color:yellow;
+	}
+	#son{
+		color: purple;
+	}
+</style>
+</head>
+<body>
+	<div1 class="grandfather" id="grandfather">
+		<div2 class="father" id="father">
+			<p class="son" id="son">
+			这是一个演示段落	
+			</p>
+		</div2>
+	</div1>
+</body>
+</html>

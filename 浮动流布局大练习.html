@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动流布局练习</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 338px;
+			height: 35px;
+			margin:0 auto;
+		}
+		header{
+
+			background-color: red;
+
+		}
+		section{
+
+			background-color: yellow;
+		}
+		footer{
+
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<header class="top container">
+		<div class="top-left"></div>
+		<div class="top-right-up"></div>
+		<div class="top-right-down"></div>
+	</header>
+	<section class="mid container">
+		<div class="mid-left">
+			<div class="mid-left-inup">
+				<div class="mid-left-inupleft">
+					<div class="up-in"></div>
+					<div class="up-down"></div>
+				</div>
+				<div class="mid-left-inupright"></div>
+			</div>
+			<div class="mid-left-indown"></div>
+		</div>
+		<div class="mid-right"></div>
+	</section>
+	<footer class="bottom container"></footer>
+</body>
+</html>

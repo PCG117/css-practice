@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画练习-加载动画</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	ul{
+		width: 100px;
+		height: 100px;
+		margin:30px auto;
+		list-style: none;
+	}
+	li{
+		margin-right: 10px;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-name:load;
+	}
+	.active{
+		width: 10px;
+		background-color: orange;
+	}
+	.l{
+		height: 30px;
+		float: left;
+		margin-top: 10px;
+		animation-duration: 0.2s;
+	}
+	.m{
+		height: 50px;
+		float: left;
+		animation-duration: 0.4s;
+	}
+	.r{
+		height: 40px;
+		float: left;
+		margin-top: 5px;
+		animation-duration: 0.3s;
+
+	}
+	@keyframes load{
+		0%{
+			opacity: 0.3;
+			transform: scale(0.8);
+		}
+		100%{
+			opacity: 1;
+			transform: scale(1.2);
+		}
+	}
+	</style>
+</head>
+<body>
+<div class="loading">
+<ul>
+	<li class="l active"></li>
+	<li class="m active"></li>
+	<li class="r active"></li>
+</ul>
+</div>
+</body>
+</html>

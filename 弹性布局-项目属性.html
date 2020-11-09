@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹性布局-项目属性练习</title>
+	<style>
+		*{
+		margin: 0;
+		padding: 0;
+		}
+		.pack{
+			width: 300px;
+			height: 600px;
+			border:1px solid black;
+			display: flex;
+			flex-direction: row;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			border:1px solid black;
+			box-sizing: border-box;
+			/*flex-grow:1;*/
+			align-self: center;
+		}
+		.box:nth-child(1){
+			/*align-self: center;*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="pack">
+		<div class="box">1号</div>
+		<div class="box">2号</div>
+		<div class="box">3号</div>
+		<div class="box">4号</div>
+	</div>
+</body>
+</html>
